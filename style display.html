@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display 활용</title>
+  <style>
+    .f1 > li {
+      margin: 3%;
+      display: inline;
+      border: 1px solid gray;
+      padding: auto;
+      background-color: bisque;
+    }
+    .f2 > li {
+      margin: 3%;
+     display: inline-block; 
+     padding: auto;
+    }
+    span{
+      border: 1px solid red;
+      width: 20vmax;
+    }
+  </style>
+</head>
+<body>
+  <ul class="f1">
+    <li><a href="https://www.naver.com/">네이버</a></li>
+    <li><a href="https://www.daum.net/">다음</a></li>
+    <li><a href="https://mabinogi.nexon.com/page/main/index.asp">마비노기</a></li>
+  </ul>
+  <ul class="f2">
+    <li>새소식</li>
+    <li>게임소개</li>
+    <li>커뮤니티</li>
+    <li>아이템샵</li>
+  </ul>
+  <span>뷰포트 width를 vmax로 하면 핸드폰이라던지 인터넷 창 크기를 줄여도 변하지 않는다.</span>
+</body>
+</html>
