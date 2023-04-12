@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>content-box 와 border-box</title>
+  <style>
+      .to1{
+        margin: 170px 500px 440px 750px;
+        padding:24px;
+        border: 1.5vmin dotted darkgray;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 440px;
+        
+      }
+      .di{
+        color: darkblue;
+        font-style: italic;
+        font-weight: bold;
+      }
+      .si{
+        color:darkred ;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+  </style>
+</head>
+<body>
+ <div class="to1">
+  <p>border 속성을 사용하면 요소에 테두리를 줄 수 있습니다.</p>
+  <p>선의 굵기와 스타일, 그리고 색을 다양한 값으로 줄 수 있죠.</p>
+  <p><span class="di">이 MDN문서</span>에서와 같이 따로따로 지정할 수도 있습니다.</p>
+  <p>box-sizing 속성은 너비와 높이 값에 <span class="si">padding</span>과<span class="si">border</span> 값을 포함시킬지를 결정합니다.</p>
+  <p>border-radius 속성을 모서리를 둥글게 하는데 사용됩니다.</p>
+ </div>
+</body>
+</html>
