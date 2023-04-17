@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex</title>
+  <style>
+    .flex-con{
+      background-color: lightgray;
+      width: 424px;
+      height: 312px;
+      margin: 0 16px 16px 0;
+    }
+    .flex-item{
+      padding: 12px ;
+      background-color: lightpink;
+      display: flex;
+      min-width: 48px;
+      min-height: 48px;
+      border:  1px solid rgba(255, 255, 255, 0.2);  
+    }
+    .flex-item:nth-child(3) ~.flex-item{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-con" style="display: flex; flex-wrap:nowrap;">
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+  <div class="flex-item" style="display: none;">4</div>
+  <div class="flex-item" style="display: none;">5</div>
+  <div class="flex-item" style="display: none;">6</div>
+  <div class="flex-item" style="display: none;">7</div>
+  <div class="flex-item" style="display: none;">8</div>
+  <div class="flex-item" style="display: none;">9</div>
+  <div class="flex-item" style="display: none;">10</div>
+  <div class="flex-item" style="display: none;">11</div>
+  <div class="flex-item" style="display: none;">12</div>
+    </div>
+    <p>내부의 div들은 min-width와 min-height을 각각 48px씩 갖고 있습니다.</p>
+</body>
+</html>
