@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position test</title>
+  <style>
+    .container {
+      width: 518px;
+      border: 2px solid #ddd;
+      padding: 12px 0 0 12px;
+      position: relative;
+      margin: 100px 650px ;
+    }
+    .container > div {
+      display: inline-block;
+      width: 160px;
+      height: 160px;
+      margin: 0 8px 5px 0;
+      background-color: lightgray;
+    }
+    .container > div.orange {
+      background-color: gold;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
+    }
+    .red {
+      width: 48px;
+      height: 48px;
+      background-color: orangered;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="result">
+      <!-- 시작-->
+      <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="orange">
+          <div class="red"></div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
